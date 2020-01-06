@@ -1,2 +1,4 @@
+import os
+
 print('Hello Github')
-print(${env.GITHUB_ACTOR})
+print(os.getenv('INPUT_USERNAME'))
