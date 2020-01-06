@@ -25,4 +25,5 @@ jobs:
         USERNAME: ${{ secrets.username }}
         PASSWORD: ${{ secrets.password }}
       run:
+        echo "username > ${USERNAME}"
         python Hello_github.py
