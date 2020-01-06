@@ -1,4 +1,4 @@
 import os
 
-print('Hello Github')
-print(os.getenv('INPUT_USERNAME'))
+print('Hello Github 20200106')
+print(os.getenv('USERNAME'))
