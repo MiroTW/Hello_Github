@@ -5,7 +5,7 @@ from selenium import webdriver
 
 class singin(unittest.TestCase):
     def setUp(self):
-        self.driver = webdriver.Chrome('./chromedriver.exe')
+        self.driver = webdriver.Chrome('./chromedriver')
         self.driver.get('https://www.104.com.tw/jobs/main/')
         self.driver.maximize_window()
 
