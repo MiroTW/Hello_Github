@@ -25,6 +25,6 @@ jobs:
         USERNAME: ${{ secrets.username }}
         PASSWORD: ${{ secrets.password }}
         Test: "get env"
-      run:
+      run: |
         echo "username > ${Test}"
         python Hello_github.py
