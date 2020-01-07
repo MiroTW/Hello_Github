@@ -3,4 +3,4 @@ First use github
 
 Branch for edits readme
 
-version 1.0.12
+version 1.0.13
