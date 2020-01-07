@@ -28,6 +28,6 @@ jobs:
         Test: "get env"
       run: |
         echo "username > ${Test}"
-        
+        dir
         python Hello_github.py
         python signin.py
