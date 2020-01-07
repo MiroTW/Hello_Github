@@ -25,8 +25,10 @@ class singin(unittest.TestCase):
         self.driver.find_element_by_xpath('//*[@id="global_bk"]/ul/li[2]/ul/li[5]/a').is_displayed()
         self.driver.get_screenshot_as_file('D://test_104_login.png')
 
-        if 'snoopy09' == password:
+        if 'snoopy099' == password:
             print("password is same")
+        else:
+            print("password is different")
 
     #login test
     def test_01(self):
