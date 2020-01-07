@@ -5,7 +5,7 @@ from selenium import webdriver
 
 class singin(unittest.TestCase):
     def setUp(self):
-        self.driver = webdriver.Chrome('.\chromedriver.exe')
+        self.driver = webdriver.Chrome('./chromedriver.exe')
         self.driver.get('https://www.104.com.tw/jobs/main/')
         self.driver.maximize_window()
 
@@ -24,6 +24,9 @@ class singin(unittest.TestCase):
         time.sleep(5)
         self.driver.find_element_by_xpath('//*[@id="global_bk"]/ul/li[2]/ul/li[5]/a').is_displayed()
         self.driver.get_screenshot_as_file('D://test_104_login.png')
+
+        if 'snoopy09' == password:
+            print("password is same")
 
     #login test
     def test_01(self):
