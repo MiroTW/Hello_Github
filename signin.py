@@ -13,8 +13,6 @@ class singin(unittest.TestCase):
         self.driver.quit()
 
     def Login(self):
-        #username = 'F127342030'
-        #password = 'snoopy09'
         username = os.getenv('USERNAME')
         password = os.getenv('PASSWORD')
         self.driver.find_element_by_xpath('//*[@id="global_bk"]/ul/li[2]/ul/li[6]/a').click()
@@ -23,7 +21,6 @@ class singin(unittest.TestCase):
         self.driver.find_element_by_id('submitBtn').click()
         time.sleep(5)
         self.driver.find_element_by_xpath('//*[@id="global_bk"]/ul/li[2]/ul/li[5]/a').is_displayed()
-        self.driver.get_screenshot_as_file('./test_104_login.png')
 
         if 'snoopy099' == password:
             print("password is same")
